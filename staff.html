@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IT Solutions &amp; Business Services Responsive HTML5 Bootstrap5  Website Template">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+  <!-- fav icon (icono de favoritos) -->
+        <link rel="icon" href="assets/images/logo/logo_fusninpe.png">
+        
+  <!-- bootstarp (bootstrap) -->
+        <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+        
+  <!-- animate.css file (archivo animate.css) -->
+        <link rel="stylesheet" href="css/vendors/animate.css">
+        
+  <!-- Swiper (Swiper) -->
+        <link rel="stylesheet" href="css/vendors/swiper-bundle.min.css">
+        
+  <!-- flaticon (flaticon) -->
+        <link rel="stylesheet" href="css/vendors/flaticon/flaticon.css">
+        
+  <!-- fontAwesome (fontAwesome) -->
+        <link rel="stylesheet" href="css/vendors/all.min.css">
+
+  <!--Link de iconos -->
+        <link rel="stylesheet" href="css/vendors/iconos.css">
+        
+  <!-- bootstrap icons (iconos de bootstrap) -->
+        <link rel="stylesheet" href="css/vendors/bootstrap-icons-1.9.1/bootstrap-icons.css">
+        
+  <!-- Fancybox (Fancybox) -->
+        <link rel="stylesheet" href="css/vendors/jquery.fancybox.min.css">
+        
+  <!-- fonts site preconnect (preconexión de fuentes del sitio) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+  <!-- fonts site preconnect (preconexión de fuentes del sitio) -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+  <!-- Font Family (Familia de fuentes) -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
+        
+  <!-- main-LTR (principal-LTR) -->
+        <link rel="stylesheet" href="css/main-LTR.css">
+        <title> flex-IT   |   Home-5</title>
+
+   <style>
+ /* --- Estilos para alinear fotos del equipo (Staff) --- */
+
+/* Define la altura fija de la caja de la imagen */
+.tm-member-card .tm-image {
+    height: 350px;       /* Puedes cambiar este número para hacerlas más altas o bajas */
+    overflow: hidden;    /* Oculta lo que sobresalga de la caja */
+    width: 100%;
+}
+
+/* Define cómo se comporta la foto dentro de la caja */
+.tm-member-card .tm-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* Recorta la imagen para llenar el espacio sin deformarse */
+    object-position: top; /* Asegura que no se corten las cabezas */
+    transition: transform 0.3s ease; /* (Opcional) Suaviza el efecto hover si lo tienes */
+}
+</style>
+  </head>
+ 
+  <body class=" dark-theme ">
+  <!--Start Page Header (Inicio del encabezado de la página) -->
+    <header class=" page-header   content-always-light header-basic" id="page-header">
+      <div class="header-search-box">
+        <div class="close-search"></div>
+        <form class="nav-search search-form" role="search" method="get" action="#">
+          <div class="search-wrapper"> 
+            <label class="search-lbl">Search for:</label>
+            <input class="search-input" type="search" placeholder="Search..." name="searchInput" autofocus="autofocus"/>
+            <button class="search-btn" type="submit"><i class="bi bi-search icon"></i></button>
+          </div>
+        </form>
+      </div>
+      <div class="container">
+        <nav class="menu-navbar">
+          <div class="header-logo"><a class="logo-link" href="#"><img class="logo-img light-logo" loading="lazy" src="assets/images/logo/logo_fusninpe.png" alt="logo"/><img class="logo-img  dark-logo" loading="lazy" src="assets/images/logo/logo-dark.png" alt="logo"/></a></div>
+          <div class="links menu-wrapper ">
+            <ul class="list-js links-list">
+              <li class="menu-item has-sub-menu"><a class="menu-link   active" href="index.html">Inicio </a>
+              </li>
+              <li class="menu-item has-sub-menu"><a class="menu-link  " href="#0">Quienes Somos<i class="fas fa-plus  plus-icon"> </i></a>
+                <ul class="sub-menu ">
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="./staff.html">Staff</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Nuestros Servicios</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Misión y Visión</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Carta al donante</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Testimonios</a></li>
+                </ul>
+              </li>
+              <li class="menu-item has-sub-menu"><a class="menu-link  " href="#0">Guía Familiar<i class="fas fa-plus  plus-icon"> </i></a>
+                <ul class="sub-menu ">
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Proceso de duelo</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Información de la hipoacusia</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Metodos de comunicación</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Mitos y realidades</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Soluciones auditivas pediatricas</a></li>
+                </ul>
+              </li>
+              <li class="menu-item has-sub-menu"><a class="menu-link  " href="#0">Profesionales <i class="fas fa-plus  plus-icon"> </i></a>
+                <ul class="sub-menu ">
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Impactos de hipoacusia infantil</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Acomodaciones en la escuela y el uso de los auxiliares auditivos</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Importancia de la detención e intervención temprana de hipoacusia</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Practica auditivo verbal</a></li>
+                </ul>
+              </li>
+             
+              <li class="menu-item has-sub-menu"><a class="menu-link  " href="#0">Proyectos<i class="fas fa-plus  plus-icon"> </i></a>
+                <ul class="sub-menu ">
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Tamizaje comunitario</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Tamizaje escolar</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Servicios de Audiologia</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Servicios de terapia de lenguaje</a></li>
+                  <li class="menu-item has-sub-menu"><a class="menu-link  " href="#0">Investigaciones<i class="fas fa-plus  plus-icon"> </i></a>
+                    <ul class="sub-menu ">
+                      <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="#0">Publicaciones</a></li>
+                     
+                    </ul>
+                </ul>
+              </li>
+              <li class="menu-item"><a class="menu-link  " href="contact-us.html">Contactanos </a></li>
+            </ul>
+          </div>
+          <div class="controls-box">
+            <!--Menu Toggler button (Botón para mostrar/ocultar menú) -->
+            <div class="control  menu-toggler"><span></span><span></span><span></span></div>
+            <!--search Icon button (Botón de icono de búsqueda) -->
+            <div class="control header-search-btn"><i class="bi bi-search icon"></i></div>
+            <!--Dark/Light mode button (Botón de modo oscuro/claro) -->
+            <div class="mode-switcher ">
+              <div class="switch-inner go-light " title="Switch To Light Mode "><i class="bi bi-sun icon "></i></div>
+              <div class="switch-inner go-dark" title="Switch To Dark Mode "><i class="bi bi-moon icon "></i></div>
+            </div>
+            <!--mini shoping cart (mini carrito de compras) -->
+          </div>
+        </nav>
+      </div>
+    </header>
+  <!--End Page Header (Fin del encabezado de la página) -->
+     <!-- Start  Page hero-->
+  <section class="page-hero d-flex align-items-center pb-0" id="page-hero">
+    <div class="overlay-photo-image-bg" data-bg-img="https://fusninpe.org/wp-content/themes/fusninpe-Child/dist/images/staff/banner_staff.jpg" data-bg-opacity=".2"></div>
+    
+    <div class="particles-js dots" id="particles-js"></div>
+    
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            
+            <div class="col-12 col-lg-10">
+                <div class="hero-text-area mb-4 text-center">
+                    <div class="row">
+                        <div class="col-12"></div>
+                        <div class="col-10 mx-auto">
+                         
+                            <h1 class="hero-title bold-title mb-2">
+                                STAFF 
+                                <span class="featured-text">DE
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="wavey-underline" width="1104.664" height="100.188" viewBox="0 0 1104.664 100.188">
+                                        <path id="Path_208" data-name="Path 208" d="M1395.385,1568.169a21.357..." transform="translate(-504.796 -1565.664)" fill="none" stroke="#030303" stroke-width="5"/>
+                                    </svg>
+                                </span> 
+                                FUSNINPE
+                            </h1>
+                            <div class="col-12  col-lg-9 mx-auto">
+                              <p class="hero-subtitle ">Nuestro personal administrativo y de apoyo tiene excepcionales habilidades interpersonales y está capacitado para aportar todas sus capacidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <div class="col-12 col-lg-10 text-center mt-3">
+                <div class="staff-image-container" style="position: relative; z-index: 2;">
+                    <img src="https://fusninpe.org/wp-content/themes/fusninpe-Child/dist/images/staff/banner_staff.jpg" 
+                         alt="Personal FUSNINPE - Jornada de Salud Auditiva" 
+                         class="img-fluid rounded shadow-lg" 
+                         style="width: 100%; height: auto; border: 4px solid white;">
+                </div>
+            </div>
+            </div>
+    </div>
+  </section>
+    <!-- End  Page hero-->
+
+
+
+
+    <!-- Start inner Page hero-->
+    <!-- <section class="d-flex align-items-center page-hero  inner-page-hero " id="page-hero">
+      <div class="overlay-photo-image-bg parallax" data-bg-img="https://fusninpe.org/wp-content/themes/fusninpe-Child/dist/images/staff/banner_staff.jpg" data-bg-opacity="1"></div>
+      <div class="overlay-color" data-bg-opacity=".75"></div>
+      <div class="container">
+        <div class="hero-text-area centerd">
+          <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">Our Team</h1>
+          <nav aria-label="breadcrumb ">
+            <ul class="breadcrumb wow fadeInUp" data-wow-delay=".6s">
+              <li class="breadcrumb-item"><a class="breadcrumb-link" href="#0"><i class="bi bi-house icon "></i>home</a></li>
+              <li class="breadcrumb-item active">our team</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section> -->
+    <!-- End inner Page hero-->
+
+  <!-- Start our team Section-->
+  <section class="our-team mega-section " id="our-team">
+    <div class="container">
+      <div class="sec-heading  ">
+      <div class="content-area"><span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">Team</span>
+        <h2 class=" title    wow fadeInUp" data-wow-delay=".4s"> CONOCE <span class='hollow-text'>A </span>NUESTRO EQUIPO</h2>
+      </div>
+      <div class=" cta-area  cta-area  wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid   cta-btn btn-solid  " href="our-team.html">see more<i class="bi bi-arrow-right icon "></i></a></div>
+      </div>
+      <div class="container-fluid">
+      <div class="row">
+        <!--first Team Member-->
+        <div class="col-12 col-md-6  col-lg-3 mx-md-auto ">
+        <div class="tm-member-card     wow   fadeInUp" data-wow-delay="0.1s">
+          <div class="tm-image js-tilt" style="height: 350px; overflow: hidden;">
+          <a class="tm-link  " href="team-member.html"> 
+            <div class="overlay overlay-color"></div>
+            <img class="img-fluid parallax-img" loading="lazy" src="assets/images/our-team/Dr.-Juan-B.-Caballero.png" alt="Team Member" style="width: 100%; height: 100%; object-fit: cover;"/>
+          </a>
+          <div class="tm-social">
+            <div class="sc-wrapper dir-row sc-size-40">
+            <ul class="sc-list">
+              <li class="sc-item " title="Facebook"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-facebook-f sc-icon"></i></a></li>
+              <li class="sc-item " title="youtube"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-youtube sc-icon"></i></a></li>
+              <li class="sc-item " title="instagram"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-instagram sc-icon"></i></a></li>
+              <li class="sc-item " title="X"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-x-twitter sc-icon"></i></a></li>
+            </ul>
+            </div>
+          </div>
+          </div>
+          <div class="tm-details"><a class="tm-link" href="team-member.html"> 
+            <h6 class="tm-name">Dr. Juan Caballero</h6></a><span class="tm-role">co Founder   </span></div>
+        </div>
+        </div>
+        <!--Second Team Member-->
+        <div class="col-12 col-md-6  col-lg-3 mx-md-auto ">
+          <div class="tm-member-card     wow   fadeInUp" data-wow-delay="0.2s">
+          <div class="tm-image js-tilt" ><a class="tm-link  " href="team-member.html"> 
+            <div class="overlay overlay-color"></div><img class="img-fluid parallax-img  " loading="lazy" src="https://fusninpe.org/wp-content/themes/fusninpe-Child/dist/images/staff/Ana.png" alt="Team Member" style="width: 100%; height: 100%; object-fit: cover;"/></a>
+            <div class="tm-social">
+            <div class="sc-wrapper dir-row sc-size-40">
+              <ul class="sc-list">
+              <li class="sc-item " title="Facebook"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-facebook-f sc-icon"></i></a></li>
+              <li class="sc-item " title="youtube"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-youtube sc-icon"></i></a></li>
+              <li class="sc-item " title="instagram"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-instagram sc-icon"></i></a></li>
+              <li class="sc-item " title="X"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-x-twitter sc-icon"></i></a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div class="tm-details"><a class="tm-link" href="team-member.html"> 
+            <h6 class="tm-name">Dr. Ana Caballero</h6></a><span class="tm-role">manager   </span></div>
+          </div>
+        </div>
+        <!--Third Team Member-->
+        <div class="col-12 col-md-6  col-lg-3 mx-md-auto ">
+          <div class="tm-member-card     wow   fadeInUp" data-wow-delay="0.4s">
+          <div class="tm-image js-tilt" style="height: 350px; overflow: hidden;"><a class="tm-link  " href="team-member.html"> 
+            <div  class="overlay overlay-color"></div><img class="img-fluid parallax-img  " loading="lazy" src="assets/images/our-team/Dra. Beatriz Córdova.png" alt="Team Member" style="width: 100%; height: 100%; object-fit: cover;"/></a>
+            <div class="tm-social">
+            <div class="sc-wrapper dir-row sc-size-40">
+              <ul class="sc-list">
+              <li class="sc-item " title="Facebook"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-facebook-f sc-icon"></i></a></li>
+              <li class="sc-item " title="youtube"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-youtube sc-icon"></i></a></li>
+              <li class="sc-item " title="instagram"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-instagram sc-icon"></i></a></li>
+              <li class="sc-item " title="X"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-x-twitter sc-icon"></i></a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div class="tm-details"><a class="tm-link" href="team-member.html"> 
+            <h6 class="tm-name">Dr. Beatriz Córdova</h6></a><span class="tm-role">co leader   </span></div>
+          </div>
+        </div>
+        <!--fourth Team Member-->
+        <div class="col-12 col-md-6  col-lg-3 mx-md-auto ">
+          <div class="tm-member-card     wow   fadeInUp" data-wow-delay="0.6s">
+          <div class="tm-image js-tilt" style="height: 350px; overflow: hidden;"><a class="tm-link  " href="team-member.html"> 
+            <div class="overlay overlay-color"></div><img class="img-fluid parallax-img  " loading="lazy" src="assets/images/our-team/Foto_Lic.Milagro.png" alt="Team Member" style="width: 100%; height: 100%; object-fit: cover;"/></a>
+            <div class="tm-social">
+            <div class="sc-wrapper dir-row sc-size-40">
+              <ul class="sc-list">
+              <li class="sc-item " title="Facebook"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-facebook-f sc-icon"></i></a></li>
+              <li class="sc-item " title="youtube"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-youtube sc-icon"></i></a></li>
+              <li class="sc-item " title="instagram"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-instagram sc-icon"></i></a></li>
+              <li class="sc-item " title="X"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-x-twitter sc-icon"></i></a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div class="tm-details"><a class="tm-link" href="team-member.html"> 
+            <h6 class="tm-name">Lic. Milagro</h6></a><span class="tm-role">consultant   </span></div>
+          </div>
+        </div>
+        <!--Fifth Team Member-->
+        <div class="col-12 col-md-6  col-lg-3 mx-md-auto ">
+          <div class="tm-member-card     wow   fadeInUp" data-wow-delay="0.1s">
+          <div class="tm-image js-tilt" style="height: 350px; overflow: hidden;"><a class="tm-link  " href="team-member.html"> 
+            <div class="overlay overlay-color"></div><img class="img-fluid parallax-img  " loading="lazy" src="assets/images/our-team/Lcda. Glenda Ramos.png" alt="Team Member" style="width: 100%; height: 100%; object-fit: cover;"/></a>
+            <div class="tm-social">
+            <div class="sc-wrapper dir-row sc-size-40">
+              <ul class="sc-list">
+              <li class="sc-item " title="Facebook"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-facebook-f sc-icon"></i></a></li>
+              <li class="sc-item " title="youtube"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-youtube sc-icon"></i></a></li>
+              <li class="sc-item " title="instagram"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-instagram sc-icon"></i></a></li>
+              <li class="sc-item " title="X"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-x-twitter sc-icon"></i></a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div class="tm-details"><a class="tm-link" href="team-member.html"> 
+            <h6 class="tm-name">Lcda. Glenda Ramos</h6></a><span class="tm-role">advisor   </span></div>
+          </div>
+        </div>
+        <!--sixth Team Member-->
+        <div class="col-12 col-md-6  col-lg-3 mx-md-auto ">
+          <div class="tm-member-card     wow   fadeInUp" data-wow-delay="0.2s">
+          <div class="tm-image js-tilt" style="height: 350px; overflow: hidden;"><a class="tm-link  " href="team-member.html"> 
+            <div class="overlay overlay-color"></div><img class="img-fluid parallax-img  " loading="lazy" src="assets/images/our-team/Lcda.Jocelyn-Martínez.jpg" alt="Team Member" style="width: 100%; height: 100%; object-fit: cover;"/></a>
+            <div class="tm-social">
+            <div class="sc-wrapper dir-row sc-size-40">
+              <ul class="sc-list">
+              <li class="sc-item " title="Facebook"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-facebook-f sc-icon"></i></a></li>
+              <li class="sc-item " title="youtube"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-youtube sc-icon"></i></a></li>
+              <li class="sc-item " title="instagram"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-instagram sc-icon"></i></a></li>
+              <li class="sc-item " title="X"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-x-twitter sc-icon"></i></a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div class="tm-details"><a class="tm-link" href="team-member.html"> 
+            <h6 class="tm-name">Lcda. Jocelyn Martínez</h6></a><span class="tm-role">analyzer   </span></div>
+          </div>
+        </div>
+        <!--seventh Team Member-->
+        <div class="col-12 col-md-6  col-lg-3 mx-md-auto ">
+          <div class="tm-member-card     wow   fadeInUp" data-wow-delay="0.4s">
+          <div class="tm-image js-tilt" "><a class="tm-link  " href="team-member.html"> 
+            <div class="overlay overlay-color"></div><img class="img-fluid parallax-img  " loading="lazy" src="assets/images/our-team/Lcda. Karla Guardado.jpg" alt="Team Member" style="width: 100%; height: 100%; object-fit: cover;"/></a>
+            <div class="tm-social">
+            <div class="sc-wrapper dir-row sc-size-40">
+              <ul class="sc-list">
+              <li class="sc-item " title="Facebook"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-facebook-f sc-icon"></i></a></li>
+              <li class="sc-item " title="youtube"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-youtube sc-icon"></i></a></li>
+              <li class="sc-item " title="instagram"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-instagram sc-icon"></i></a></li>
+              <li class="sc-item " title="X"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-x-twitter sc-icon"></i></a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div class="tm-details"><a class="tm-link" href="team-member.html"> 
+            <h6 class="tm-name">Lcda. Karla Guardado</h6></a><span class="tm-role">performer   </span></div>
+          </div>
+        </div>
+        <!--eighth Team Member-->
+        <div class="col-12 col-md-6  col-lg-3 mx-md-auto ">
+          <div class="tm-member-card     wow   fadeInUp" data-wow-delay="0.6s">
+          <div class="tm-image js-tilt" style="height: 350px; overflow: hidden;"><a class="tm-link  " href="team-member.html"> 
+            <div class="overlay overlay-color"></div><img class="img-fluid parallax-img  " loading="lazy" src="assets/images/our-team/Lcda. Montserrat Caballero.png" alt="Team Member" style="width: 100%; height: 100%; object-fit: cover;"/></a>
+            <div class="tm-social">
+            <div class="sc-wrapper dir-row sc-size-40">
+              <ul class="sc-list">
+              <li class="sc-item " title="Facebook"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-facebook-f sc-icon"></i></a></li>
+              <li class="sc-item " title="youtube"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-youtube sc-icon"></i></a></li>
+              <li class="sc-item " title="instagram"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-instagram sc-icon"></i></a></li>
+              <li class="sc-item " title="X"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-x-twitter sc-icon"></i></a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div class="tm-details"><a class="tm-link" href="team-member.html"> 
+            <h6 class="tm-name">Lcda. Montserrat Caballero</h6></a><span class="tm-role">actor   </span></div>
+          </div>          
+        </div>
+        <!--Nine Team Member-->
+         <div class="col-12 col-md-6  col-lg-3 mx-md-auto ">
+          <div class="tm-member-card     wow   fadeInUp" data-wow-delay="0.6s">
+          <div class="tm-image js-tilt" style="height: 350px; overflow: hidden;"><a class="tm-link  " href="team-member.html"> 
+            <div class="overlay overlay-color"></div><img class="img-fluid parallax-img  " loading="lazy" src="assets/images/our-team/Lic.Cesar-Galdamez.jpg" alt="Team Member" style="width: 100%; height: 100%; object-fit: cover;"/></a>
+            <div class="tm-social">
+            <div class="sc-wrapper dir-row sc-size-40">
+              <ul class="sc-list">
+              <li class="sc-item " title="Facebook"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-facebook-f sc-icon"></i></a></li>
+              <li class="sc-item " title="youtube"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-youtube sc-icon"></i></a></li>
+              <li class="sc-item " title="instagram"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-instagram sc-icon"></i></a></li>
+              <li class="sc-item " title="X"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-x-twitter sc-icon"></i></a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div class="tm-details"><a class="tm-link" href="team-member.html"> 
+            <h6 class="tm-name">Lic. Cesar Galdamez</h6></a><span class="tm-role">actor   </span></div>
+          </div>  
+
+         </div>
+         <!-- ten Team Member-->
+           <div class="col-12 col-md-6  col-lg-3 mx-md-auto ">
+              <div class="tm-member-card     wow   fadeInUp" data-wow-delay="0.6s">
+                <div class="tm-image js-tilt "><a class="tm-link  " href="team-member.html"> 
+                    <div class="overlay overlay-color"></div><img class="img-fluid parallax-img  " loading="lazy" src="assets/images/our-team/Mónica.png" alt="Team Member"/></a>
+                  <div class="tm-social">
+                    <div class="sc-wrapper dir-row sc-size-40">
+                      <ul class="sc-list">
+                        <li class="sc-item " title="Facebook"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-facebook-f sc-icon"></i></a></li>
+                        <li class="sc-item " title="youtube"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-youtube sc-icon"></i></a></li>
+                        <li class="sc-item " title="instagram"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-instagram sc-icon"></i></a></li>
+                        <li class="sc-item " title="X"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-x-twitter sc-icon"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="tm-details"><a class="tm-link" href="team-member.html"> 
+                    <h6 class="tm-name">Lcda. Mónica Orellana</h6></a><span class="tm-role">actor   </span></div>
+              </div>
+            </div>
+            <!-- Eleven Team Member-->
+              <div class="col-12 col-md-6  col-lg-3 mx-md-auto ">
+              <div class="tm-member-card     wow   fadeInUp" data-wow-delay="0.6s">
+                <div class="tm-image js-tilt "><a class="tm-link  " href="team-member.html"> 
+                    <div class="overlay overlay-color"></div><img class="img-fluid parallax-img  " loading="lazy" src="assets/images/our-team/Lcda. Natalie Campos.jpeg" alt="Team Member"/></a>
+                  <div class="tm-social">
+                    <div class="sc-wrapper dir-row sc-size-40">
+                      <ul class="sc-list">
+                        <li class="sc-item " title="Facebook"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-facebook-f sc-icon"></i></a></li>
+                        <li class="sc-item " title="youtube"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-youtube sc-icon"></i></a></li>
+                        <li class="sc-item " title="instagram"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-instagram sc-icon"></i></a></li>
+                        <li class="sc-item " title="X"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-x-twitter sc-icon"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="tm-details"><a class="tm-link" href="team-member.html"> 
+                    <h6 class="tm-name">Lcda. Natalie Campos</h6></a><span class="tm-role">actor   </span></div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+         
+         
+    <!-- End our team Section-->
+   
+    <!-- Start  page-footer Section-->
+    <footer class="page-footer dark-color-footer" id="page-footer">
+      <div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/Fondo_footer.png" data-bg-opacity=".25"></div>
+      <div class="container">
+        <div class="row footer-cols">
+          <div class="col-12 col-md-8 col-lg-4  footer-col "><img class="img-fluid footer-logo" loading="lazy" src="assets/images/logo/logo_fusninpe.png" alt="logo"/>
+            <div class="footer-col-content-wrapper">        
+              <p class="footer-text-about-us ">
+                 La Fundación Su Niño No Puede Esperar (FUSNINPE) es una organización sin fines de lucro, con el objetivo de brindar acceso a los servicios de audición para la niñez salvadoreña.
+                
+              </p>
+            </div>
+            <div class="form-area ">
+              <div class="mailchimp-form ">
+                <form class="one-field-form" method="post" action="#0">
+                  <div class="field-group ">
+                    <label class="email-label" for="email-input"> Suscríbete a nuestro boletín de Información</label>
+                    <input class="email-input " type="email" value="" name="EMAIL" id="email-input" placeholder="Correo Electronico" autocomplete="off"/>
+                    <div class="cta-area">
+                      <input class="btn-solid subscribe-btn" type="submit" value="Subscribe" name="subscribe"/>
+                    </div>
+                  </div><span class="email-notice">*No compartiremos tu información personal.</span>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2  footer-col ">
+            <h2 class=" footer-col-title    ">Enlaces útiles</h2>
+            <div class="footer-col-content-wrapper">
+              <ul class="footer-menu ">
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon"></i><a class="footer-menu-link" href="https://www.facebook.com/fusninpe" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon"></i><a class="footer-menu-link" href="https://api.whatsapp.com/send/?phone=50378565056&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon"></i><a class="footer-menu-link" href="https://www.linkedin.com/in/fundacion-su-ni%C3%B1o-no-puede-esperar-842b6224b/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon"></i><a class="footer-menu-link" href="https://www.youtube.com/@fusninpe" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+                </li>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon"></i><a class="footer-menu-link" href="https://www.instagram.com/fusninpe?igsh=OGw5aWk5N3NlOHFz&utm_source=qr" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="footer-menu-item"><i class="bi bi-arrow-right icon"></i><a class="footer-menu-link" href="https://www.youtube.com/@fusninpe" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2 footer-col ">
+            <h2 class=" footer-col-title    ">Resources</h2>
+            <div class="footer-col-content-wrapper">
+              <ul class="footer-menu">
+                <li class="footer-menu-item" style="display: flex; align-items: center;"><i style="margin-right: 8px;" class="bi bi-arrow-right icon"></i><a class="footer-menu-link" href="#0" style="line-height: 1.2;">Guía para profesionales,<br> padres y maestros</a></li>
+              
+              </ul>
+            </div>
+          </div>
+          <div class="col-12     col-lg-4 footer-col ">
+            <h2 class=" footer-col-title    ">contact information</h2>
+            <div class="footer-col-content-wrapper">       
+              <div class="contact-info-card"><i class="bi bi-envelope icon"></i><a class="text-lowercase  info" href="mailto:example@support.com">example@support.com</a></div>
+              <div class="contact-info-card"><a href="https://www.waze.com/en/live-map/directions/sv/san-salvador/san-salvador/fundacion-su-nino-no-puede-esperar?to=place.ChIJF_5KpGYwY48R3CnjZLexY-o" target="_blank"><i class="bi bi-geo-alt icon"></i><span class="text-lowercase info">Colonia Miramonte, Calle Sisimiles, #3004, El Salvador.</span></a></div>
+
+              <div class="contact-info-card"><i class="bi bi-phone icon"></i><a class="info" href="tel:+50325250930">+(503) 2525 0930  </a></div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights ">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 d-flex justify-content-start">
+              <p class="creadits">
+                 
+                
+                &copy; 2024
+                Created by:
+                
+                           <a class="link" href="#0">amin-themes</a>
+              </p>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-end">
+              <div class="terms-links"><a href="#0">Terms of Use </a>
+                | <a href="#0" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End  page-footer Section-->
+    <!-- Start loading-screen Component-->
+    <div class="loading-screen" id="loading-screen"><span class="bar top-bar"></span><span class="bar down-bar"></span><span class="progress-line"></span><span class="loading-counter"> </span></div>
+    <!-- End loading-screen Component-->
+    <!-- Start back-to-top Button-->
+    <div class="back-to-top" id="back-to-top"><i class="bi bi-arrow-up icon "></i>
+    </div>
+    <!-- End back-to-top Button-->
+    <!-- Start privacy-policy-modal-->
+    <div class="modal privacy-policy-modal fade" id="privacyPolicyModal" aria-labelledby="PrivacyPolicyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl ">
+        <div class="modal-content text-dark">
+          <div class="modal-header">
+            <h2 class="modal-title" id="PrivacyPolicyModalLabel">Privacy Policy Modal Title</h2>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="content">
+              <h4>privacy policy item Title goes here </h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe, labore sequi libero nesciunt optio quidem iste, dolorum nostrum ex at. Recusandae ducimus aut autem temporibus tempore rerum, consequuntur doloribus perspiciatis, labore totam dolorem veritatis repellendus omnis illo sint ut?</p>
+            </div>
+            <div class="content">
+              <h4>privacy policy item Title goes here </h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe, labore sequi libero nesciunt optio quidem iste, dolorum nostrum ex at. Recusandae ducimus aut autem temporibus tempore rerum, consequuntur doloribus perspiciatis, labore totam dolorem veritatis repellendus omnis illo sint ut?</p>
+            </div>
+            <div class="content">
+              <h4>privacy policy item Title goes here </h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe, labore sequi libero nesciunt optio quidem iste, dolorum nostrum ex at. Recusandae ducimus aut autem temporibus tempore rerum, consequuntur doloribus perspiciatis, labore totam dolorem veritatis repellendus omnis illo sint ut?</p>
+            </div>
+            <div class="content">
+              <h4>privacy policy item Title goes here </h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe, labore sequi libero nesciunt optio quidem iste, dolorum nostrum ex at. Recusandae ducimus aut autem temporibus tempore rerum, consequuntur doloribus perspiciatis, labore totam dolorem veritatis repellendus omnis illo sint ut?</p>
+            </div>
+            <div class="content">
+              <h4>privacy policy item Title goes here </h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe, labore sequi libero nesciunt optio quidem iste, dolorum nostrum ex at. Recusandae ducimus aut autem temporibus tempore rerum, consequuntur doloribus perspiciatis, labore totam dolorem veritatis repellendus omnis illo sint ut?</p>
+            </div>
+            <div class="content">
+              <h4>privacy policy item Title goes here </h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe, labore sequi libero nesciunt optio quidem iste, dolorum nostrum ex at. Recusandae ducimus aut autem temporibus tempore rerum, consequuntur doloribus perspiciatis, labore totam dolorem veritatis repellendus omnis illo sint ut?</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn-solid" type="button" data-bs-dismiss="modal" aria-label="Close">Click to close</button>
+            <button class="btn-outline" type="button">Do somthing else</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End privacy-policy-modal-->   
+        
+        <!--     JQuery     -->
+        <script src="js/vendors/jquery-3.6.1.min.js"></script>
+        
+        <!--     appear     -->
+        <script src="js/vendors/appear.min.js"></script>
+        
+        <!--     bootstrap     -->
+        <script src="js/vendors/bootstrap.bundle.min.js"></script>
+        
+        <!--     countTo     -->
+        <script src="js/vendors/jquery.countTo.js"></script>
+        
+        <!--     wow     -->
+        <script src="js/vendors/wow.min.js"></script>
+        
+        <!--     swiper     -->
+        <script src="js/vendors/swiper-bundle.min.js"></script>
+        
+        <!--     particles     -->
+        <script src="js/vendors/particles.min.js"></script>
+        
+        <!--     Vanilla-tilt     -->
+        <script src="js/vendors/vanilla-tilt.min.js"></script>
+        
+        <!--     isotope     -->
+        <script src="js/vendors/isotope-min.js"></script>
+        
+        <!--     fancybox     -->
+        <script src="js/vendors/jquery.fancybox.min.js"></script>
+        
+        <!--  Animacion de iconos -->
+        <script src="js/iconos.js"></script>
+        <!--     main     -->
+        <script src="js/main.js"></script>
+        
+  </body>
+</html>

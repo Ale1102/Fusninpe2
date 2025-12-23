@@ -87,6 +87,60 @@ Template Description: IT Solutions & Business Services Responsive HTML5 Bootstra
   border-radius: 1rem;
 }
 
+
+/*Imagenes modificadas*/
+
+ /* Ajuste profesional para la imagen de fondo del Hero */
+  .page-hero .overlay-photo-image-bg {
+      /* 1. Cubrir todo el espacio sin estirar (mantiene proporción) */
+      background-size: cover !important; 
+      
+      /* 2. ALINEACIÓN CLAVE: Pega la imagen al borde SUPERIOR */
+      /* Esto asegura que las cabezas de las personas siempre se vean, aunque se corte lo de abajo */
+      background-position: top center !important; 
+      
+      /* 3. Evita que se repita */
+      background-repeat: no-repeat !important;
+      
+      /* 4. Asegura que ocupe toda la altura del contenedor */
+      height: 100% !important;
+      width: 100% !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+
+  /* Ajuste para móviles: Reduce la altura para que se vea más imagen a los lados */
+  @media (max-width: 768px) {
+      .page-hero {
+          min-height: 300px !important; /* Altura controlada en celular */
+          padding-top: 60px !important;
+          padding-bottom: 60px !important;
+      }
+  }
+
+  /*Imagenes de staff*/
+  /* Forzar mismo tamaño para todas las fotos del equipo */
+/* --- Estilos para alinear fotos del equipo (Staff) --- */
+
+/* Define la altura fija de la caja de la imagen */
+.tm-member-card .tm-image {
+    height: 350px;       /* Puedes cambiar este número para hacerlas más altas o bajas */
+    overflow: hidden;    /* Oculta lo que sobresalga de la caja */
+    width: 100%;
+}
+
+/* Define cómo se comporta la foto dentro de la caja */
+.tm-member-card .tm-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* Recorta la imagen para llenar el espacio sin deformarse */
+    object-position: top; /* Asegura que no se corten las cabezas */
+    transition: transform 0.3s ease; /* (Opcional) Suaviza el efecto hover si lo tienes */
+}
+
+
+
 .pre-title {
   position: relative;
   font-size: 1rem;
@@ -129,6 +183,7 @@ Template Description: IT Solutions & Business Services Responsive HTML5 Bootstra
   z-index: -1;
   display: block;
   transition: all 0.5s ease-in-out 0s;
+  
 }
 
 body {
