@@ -1,0 +1,56 @@
+.title-area h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    display: flex;
+    gap: 50px;
+
+}
+
+ 
+/* Define la altura fija de la caja de la imagen */
+.tm-member-card .tm-image {
+    height: 350px;       /* Puedes cambiar este número para hacerlas más altas o bajas */
+    overflow: hidden;    /* Oculta lo que sobresalga de la caja */
+    width: 100%;
+}
+
+/* 1. Estilos base para la descripción (Estado Oculto) */
+.member-desc {
+  color: #fff;             /* Color del texto */
+  font-size: 0.9rem;       /* Tamaño de letra */
+  text-align: center;
+  margin-bottom: 10px;     /* Separación con los íconos */
+  display: block;
+  
+  /* Animación */
+  opacity: 0;              /* Invisible */
+  visibility: hidden;      /* No interactuable */
+  transform: translateY(20px); /* Empieza desplazado hacia abajo */
+  transition: all 0.4s ease-in-out; /* Suavizado */
+}
+
+/* 2. Aseguramos que el contenedor social permita apilar elementos */
+.tm-social .sc-wrapper {
+  display: flex;
+  flex-direction: column; /* Pone el texto arriba de los iconos */
+  align-items: center;
+  justify-content: center;
+}
+
+/* 3. EL GATILLO (TRIGGER) */
+/* Cuando haces hover en .tm-member-card, la clase .member-desc cambia */
+.tm-member-card:hover .member-desc {
+  opacity: 1;              /* Visible */
+  visibility: visible;
+  transform: translateY(0); /* Sube a su posición original */
+}
+
+/* Opcional: Si quieres que los iconos también se muevan un poco al hacer hover en la card */
+.tm-member-card:hover .sc-list {
+  transform: translateY(0);
+}
